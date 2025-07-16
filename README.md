@@ -2,6 +2,9 @@
 
 A simple and clean personal portfolio website built with **Laravel 12** and **Tailwind CSS**, designed to showcase personal information, programming skills, and a list of personal projects. This project serves as a static website for applying to internships or job positions in web development.
 
+## 📷 Screenshots
+![Screenshot](https://raw.githubusercontent.com/tynkeyrm0511/portfolio/refs/heads/main/1.png)
+
 ## 📌 Project Information
 
 - **Timeframe:** 06/2025 – 07/2025  
@@ -23,9 +26,6 @@ A simple and clean personal portfolio website built with **Laravel 12** and **Ta
   - Personal introduction and skills
   - Project list with GitHub links
   - Contact section (email, phone)
-
-## 📷 Screenshots
-![Screenshot](https://raw.githubusercontent.com/tynkeyrm0511/portfolio/refs/heads/main/1.png)
 
 ## 🛠️ Tech Stack
 
