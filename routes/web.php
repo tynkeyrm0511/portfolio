@@ -8,13 +8,13 @@ Route::get('/', function () {
 });
 //About
 Route::get('/about', function(){
-    return view('about')->name('about');
-});
+    return view('about');
+})->name('about');
 //Projects
 Route::get('/projects', function(){
-    return view('projects')->name('projects');
-});
+    return view('projects');
+})->name('projects');
 //Contacts
 Route::get('/contacts', function(){
-    return view('contacts')->name('contacts');
-});
+    return view('contacts');
+})->name('contacts');
