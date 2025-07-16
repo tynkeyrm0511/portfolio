@@ -24,6 +24,9 @@ A simple and clean personal portfolio website built with **Laravel 12** and **Ta
   - Project list with GitHub links
   - Contact section (email, phone)
 
+## 📷 Screenshots
+![Screenshot](https://raw.githubusercontent.com/tynkeyrm0511/portfolio/refs/heads/main/1.png)
+
 ## 🛠️ Tech Stack
 
 | Category             | Technology              |
@@ -39,5 +42,4 @@ A simple and clean personal portfolio website built with **Laravel 12** and **Ta
 - **Projects Page:** Showcase of personal projects with GitHub links  
 - **Contact Page:** Displays email and phone number for communication
 
-## 📷 Screenshots
-![Screenshot](https://raw.githubusercontent.com/tynkeyrm0511/portfolio/refs/heads/main/1.png)
+
