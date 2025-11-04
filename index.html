@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,32 +11,241 @@
     <!-- SCRIPT -->
     <script defer type="module" src="js/main.js"></script>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <!-- HEADER -->
-    <header>
-
+    <header class="absolute top-0 right-0 left-0 z-20 bg-transparent">
+      <nav class="flex items-center justify-between p-4 md:p-4 lg:p-5">
+        <!-- LOGO -->
+        <div class="px-2 md:px-20">
+          <a
+            class="font-comfortaa text-shadow-lg/20 hover:cursor-pointer hover:text-shadow-lg text-white md:text-black"
+            href="#"
+            >Syntax Ngo</a
+          >
+        </div>
+        <!-- MENU -->
+        <ul
+          class="font-comfortaa flex items-center gap-2 px-2 text-shadow-lg/20 md:gap-6 md:pr-20 lg:gap-10"
+        >
+          <li class="hover:cursor-pointer hover:font-bold hover:text-shadow-lg text-white md:text-black">
+            About
+          </li>
+          <li class="hover:cursor-pointer hover:font-bold hover:text-shadow-lg text-white md:text-black">
+            Projects
+          </li>
+          <li class="hover:cursor-pointer hover:font-bold hover:text-shadow-lg text-white md:text-black">
+            Contact
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <section class=" flex flex-col md:flex-row lg:flex-row items-center">
-        <!-- LEFT -->
-         <div class="flex-1 p-10 md:p-20 lg:p-20 z-10 mx-auto">
-            <h2 class="text-white text-shadow-lg/40 md:text-p md:text-shadow-none font-bold text-xl font-comfortaa uppercase py-3 
-                       ">WEB DEVELOPER</h2>
-            <h1 class="font-bold text-6xl font-comfortaa py-3">Hi, mình là Ngô Hoàng Nguyên!</h1>
-            <p class=" tracking-wide text-justify font-comfortaa text-text-medium py-3">Mình là fresher web dev vừa tốt nghiệp, tập trung Node.js & React. Mình xây API rõ ràng (Express, Prisma/PostgreSQL, JWT, Socket.IO) và UI mạch lạc (React/Next.js, Vite, React Query, Tailwind). Ưu tiên code sạch, dễ mở rộng, và triển khai Vercel/Render/Docker. Đang tìm internship để va chạm quy trình thật và ship sản phẩm có người dùng.</p>
-            <div>
-              <a class="bg-p rounded-lg border-p border inline-block px-6 py-2 mr-2 font-bold font-comfortaa " href="">Projects</a>
-              <a class="rounded-lg border-2 inline-block px-6 py-2 font-bold font-comfortaa" href="">Linkedin</a>
-            </div>
-         </div>
-         <!-- RIGHT -->
-          <div class="flex-1 flex justify-end ">
-            <img class="w-150 h-auto invisible md:visible lg:visible absolute top-0 right-0 z-0" src="/assets/portrait_1.png" alt="">
-            <img class="w-auto h-auto visible md:invisible lg:invisible absolute top-0 right-0 z-0" src="/assets/yellow-bg.png" alt="">
-          </div>
+    <section class="flex flex-col items-center md:flex-row lg:flex-row z-10">
+      <!-- LEFT -->
+      <div class="z-10 mx-auto flex-1 pt-15 px-6 md:p-15 lg:ml-10 lg:p-15">
+        <h2
+          class="md:text-p font-comfortaa py-3 text-xl font-bold text-white uppercase text-shadow-lg md:text-shadow-none"
+        >
+          WEB DEVELOPER
+        </h2>
+        <h1
+          class="md:text-black text-white font-comfortaa py-3 pr-0 text-4xl font-bold  text-shadow-lg text-shadow-lg/40 md:text-shadow-none md:pr-20 lg:pr-30"
+        >
+          Hi, mình là <br />
+          Ngô Hoàng Nguyên
+        </h1>
+        <p
+          class="font-comfortaa text-text-medium py-3 pr-0 text-justify text-shadow-sm md:pr-20 lg:pr-40"
+        >
+          Mình là fresher web dev vừa tốt nghiệp, tập trung Node.js & React.
+          Mình xây API rõ ràng (Express, Prisma/PostgreSQL, JWT, Socket.IO) và
+          UI mạch lạc (React/Next.js, Vite, React Query, Tailwind). Ưu tiên code
+          sạch, dễ mở rộng, và triển khai Vercel/Render/Docker. Đang tìm
+          internship để va chạm quy trình thật và ship sản phẩm có người dùng.
+        </p>
+        <div class="pt-3">
+          <button
+            class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+            href=""
+          >
+            Projects
+          </button>
+          <button
+            class="font-comfortaa inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:bg-white"
+            href=""
+          >
+            Linkedin
+          </button>
+        </div>
+      </div>
+      <!-- RIGHT -->
+      <div class="flex flex-1 justify-end">
+        <img
+          class="invisible absolute top-0 right-0 z-0 h-auto w-160 md:visible lg:visible"
+          src="/assets/portrait_1.png"
+          alt=""
+        />
+        <img
+          class="visible absolute top-0 right-0 z-0 h-auto w-auto md:invisible lg:invisible"
+          src="/assets/portrait_1.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- PROJECTS LIST -->
+    <section class="px-6 pt-30 pb-6">
+      <!-- Title -->
+      <div class="pb-6">
+        <h1
+          class="font-comfortaa text-bold text-center text-3xl text-shadow-lg"
+        >
+          Projects
+        </h1>
+        <hr
+          class="border-p mx-auto my-2 h-px w-24 rounded-2xl border-3 border-t"
+        />
+      </div>
+      <!-- Project 1 -->
+      <div
+        class="mx-auto flex max-w-5xl flex-col justify-stretch gap-0 p-6 md:flex-row"
+      >
+        <!-- Left -->
+        <div
+          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-lg"
+        >
+          <h1
+            class="font-comfortaa px-2 pt-6 pb-3 text-center text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
+          >
+            HomeEase
+          </h1>
+          <p
+            class="font-comfortaa text-text-medium invisible px-10 pb-6 md:visible"
+          >
+            <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
+            web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
+            trì và thông báo. Dự án sử dụng
+            <span class="font-bold text-[#8BC500]">Node.js</span>,
+            <span class="font-bold text-[#F7DF1E]">Express.js</span>,
+            <span class="font-bold text-[#02364E]">Prisma ORM</span>, và
+            <span class="font-bold text-[#336791]">PostgreSQL</span> cho
+            backend; EJS và TailwindCSS cho frontend. Kiến trúc module đảm bảo
+            dễ mở rộng và bảo trì.
+          </p>
+          <button class="px-10 pb-6">
+            <a
+              class="md:bg-p font-comfortaa bg-p invisible mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              href="#"
+              >View project</a
+            >
+          </button>
+        </div>
+        <!-- Right -->
+        <div
+          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-lg"
+        >
+          <img
+            class="h-full w-full object-cover object-top-left shadow-lg"
+            src="assets/homeease.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div
+        class="mx-auto flex max-w-5xl flex-col justify-stretch gap-0 p-6 md:flex-row-reverse"
+      >
+        <!-- Left -->
+        <div
+          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-lg"
+        >
+          <h1
+            class="font-comfortaa px-2 pt-6 pb-3 text-center text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
+          >
+            Movie App
+          </h1>
+          <p
+            class="font-comfortaa text-text-medium invisible px-10 pb-6 md:visible"
+          >
+            Movie App là ứng dụng web 1 trang (SPA) giúp bạn duyệt và xem thông
+            tin cơ bản của các bộ phim (tựa, poster, mô tả ngắn…). Ứng dụng được
+            build nhanh gọn với React + Vite và triển khai trên GitHub Pages để
+            truy cập trực tiếp qua liên kết
+          </p>
+          <button class="pr-20 pb-6 pl-10">
+            <a
+              class="md:bg-p font-comfortaa bg-p invisible mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              href="#"
+              >View project</a
+            >
+          </button>
+        </div>
+        <!-- Right -->
+        <div
+          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-lg"
+        >
+          <img
+            class="h-full w-full object-cover object-top-left shadow-lg"
+            src="assets/movieapp.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- Project 3  -->
+      <div
+        class="mx-auto flex max-w-5xl flex-col justify-stretch gap-0 p-6 md:flex-row"
+      >
+        <!-- Left -->
+        <div
+          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-lg"
+        >
+          <h1
+            class="font-comfortaa px-2 pt-6 pb-3 text-center text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
+          >
+            Kage Chat
+          </h1>
+          <p
+            class="font-comfortaa text-text-medium invisible px-10 pb-6 md:visible"
+          >
+            <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
+            web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
+            trì và thông báo. Dự án sử dụng
+            <span class="font-bold text-[#8BC500]">Node.js</span>,
+            <span class="font-bold text-[#F7DF1E]">Express.js</span>,
+            <span class="font-bold text-[#02364E]">Prisma ORM</span>, và
+            <span class="font-bold text-[#336791]">PostgreSQL</span> cho
+            backend; EJS và TailwindCSS cho frontend. Kiến trúc module đảm bảo
+            dễ mở rộng và bảo trì.
+          </p>
+          <button class="px-10 pb-6">
+            <a
+              class="md:bg-p font-comfortaa bg-p invisible mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              href="#"
+              >View project</a
+            >
+          </button>
+        </div>
+        <!-- Right -->
+        <div
+          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-lg"
+        >
+          <img
+            class="h-full w-full object-cover object-top-left shadow-lg"
+            src="assets/Kagechat.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT ME -->
+    <section>
+      
+    </section>
+    <!-- CONTACT -->
+    <section>
+
     </section>
     <!-- FOOTER -->
-
     <footer>
 
     </footer>
