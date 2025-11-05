@@ -10,6 +10,7 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <!-- SCRIPT -->
     <script defer type="module" src="js/main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body class="bg-gray-100">
     <!-- HEADER -->
@@ -18,7 +19,7 @@
         <!-- LOGO -->
         <div class="px-2 md:px-20">
           <a
-            class="font-comfortaa text-shadow-lg/20 hover:cursor-pointer hover:text-shadow-lg text-white md:text-black"
+            class="font-comfortaa text-shadow-lg/20 hover:cursor-pointer hover:text-shadow-lg md:text-black"
             href="#"
             >Syntax Ngo</a
           >
@@ -27,29 +28,31 @@
         <ul
           class="font-comfortaa flex items-center gap-2 px-2 text-shadow-lg/20 md:gap-6 md:pr-20 lg:gap-10"
         >
-          <li class="hover:cursor-pointer hover:font-bold hover:text-shadow-lg text-white md:text-black">
-            About
+          <li>
+            <a class="hover:font-bold hover:text-shadow-lg" href="#">About</a>
           </li>
-          <li class="hover:cursor-pointer hover:font-bold hover:text-shadow-lg text-white md:text-black">
-            Projects
+          <li>
+            <a class="hover:font-bold hover:text-shadow-lg" href="#"
+              >Projects</a
+            >
           </li>
-          <li class="hover:cursor-pointer hover:font-bold hover:text-shadow-lg text-white md:text-black">
-            Contact
+          <li>
+            <a class="hover:font-bold hover:text-shadow-lg" href="#">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section class="flex flex-col items-center md:flex-row lg:flex-row z-10">
+    <section class="z-10 flex flex-col items-center md:flex-row lg:flex-row">
       <!-- LEFT -->
-      <div class="z-10 mx-auto flex-1 pt-15 px-6 md:p-15 lg:ml-10 lg:p-15">
+      <div class="z-10 mx-auto flex-1 px-4 pt-15 md:p-15 lg:ml-10 lg:p-15">
         <h2
           class="md:text-p font-comfortaa py-3 text-xl font-bold text-white uppercase text-shadow-lg md:text-shadow-none"
         >
           WEB DEVELOPER
         </h2>
         <h1
-          class="md:text-black text-white font-comfortaa py-3 pr-0 text-4xl font-bold  text-shadow-lg text-shadow-lg/40 md:text-shadow-none md:pr-20 lg:pr-30"
+          class="font-comfortaa py-3 pr-0 text-4xl font-bold text-white text-shadow-lg/40 text-shadow-lg md:pr-20 md:text-black md:text-shadow-none lg:pr-30"
         >
           Hi, mình là <br />
           Ngô Hoàng Nguyên
@@ -59,11 +62,10 @@
         >
           Mình là fresher web dev vừa tốt nghiệp, tập trung Node.js & React.
           Mình xây API rõ ràng (Express, Prisma/PostgreSQL, JWT, Socket.IO) và
-          UI mạch lạc (React/Next.js, Vite, React Query, Tailwind). Ưu tiên code
-          sạch, dễ mở rộng, và triển khai Vercel/Render/Docker. Đang tìm
+          UI mạch lạc (React/Next.js, Vite, React Query, Tailwind). Đang tìm
           internship để va chạm quy trình thật và ship sản phẩm có người dùng.
         </p>
-        <div class="pt-3">
+        <div class="flex justify-center pt-3 md:justify-start gap-6">
           <button
             class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
             href=""
@@ -81,15 +83,11 @@
       <!-- RIGHT -->
       <div class="flex flex-1 justify-end">
         <img
-          class="invisible absolute top-0 right-0 z-0 h-auto w-160 md:visible lg:visible"
+          class="absolute top-0 right-0 z-0 h-auto w-160"
           src="assets/portrait_1.png"
           alt=""
         />
-        <img
-          class="visible absolute top-0 right-0 z-0 h-auto w-auto md:invisible lg:invisible"
-          src="assets/portrait_1.png"
-          alt=""
-        />
+
       </div>
     </section>
 
@@ -112,15 +110,15 @@
       >
         <!-- Left -->
         <div
-          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-lg"
+          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-4xl"
         >
           <h1
-            class="font-comfortaa px-2 pt-6 pb-3 text-center text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
+            class="font-comfortaa px-2 pt-6 pb-3 text-left text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
           >
             HomeEase
           </h1>
           <p
-            class="font-comfortaa text-text-medium invisible px-10 pb-6 md:visible"
+            class="font-comfortaa text-text-medium invisible px-10 pb-6 text-justify md:visible"
           >
             <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
             web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
@@ -142,7 +140,7 @@
         </div>
         <!-- Right -->
         <div
-          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-lg"
+          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-4xl"
         >
           <img
             class="h-full w-full object-cover object-top-left shadow-lg"
@@ -157,15 +155,15 @@
       >
         <!-- Left -->
         <div
-          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-lg"
+          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-4xl"
         >
           <h1
-            class="font-comfortaa px-2 pt-6 pb-3 text-center text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
+            class="font-comfortaa px-2 pt-6 pb-3 text-left text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
           >
             Movie App
           </h1>
           <p
-            class="font-comfortaa text-text-medium invisible px-10 pb-6 md:visible"
+            class="font-comfortaa text-text-medium invisible px-10 pb-6 text-justify md:visible"
           >
             Movie App là ứng dụng web 1 trang (SPA) giúp bạn duyệt và xem thông
             tin cơ bản của các bộ phim (tựa, poster, mô tả ngắn…). Ứng dụng được
@@ -182,7 +180,7 @@
         </div>
         <!-- Right -->
         <div
-          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-lg"
+          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-4xl"
         >
           <img
             class="h-full w-full object-cover object-top-left shadow-lg"
@@ -197,15 +195,15 @@
       >
         <!-- Left -->
         <div
-          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-lg"
+          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-4xl"
         >
           <h1
-            class="font-comfortaa px-2 pt-6 pb-3 text-center text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
+            class="font-comfortaa px-2 pt-6 pb-3 text-left text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
           >
             Kage Chat
           </h1>
           <p
-            class="font-comfortaa text-text-medium invisible px-10 pb-6 md:visible"
+            class="font-comfortaa text-text-medium invisible px-10 pb-6 text-justify md:visible"
           >
             <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
             web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
@@ -227,7 +225,7 @@
         </div>
         <!-- Right -->
         <div
-          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-lg"
+          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-4xl"
         >
           <img
             class="h-full w-full object-cover object-top-left shadow-lg"
@@ -238,16 +236,73 @@
       </div>
     </section>
     <!-- ABOUT ME -->
-    <section>
-      
+    <!-- Title -->
+    <div class="">
+      <h1 class="font-comfortaa text-bold text-center text-3xl text-shadow-lg">
+        About
+      </h1>
+      <hr
+        class="border-p mx-auto my-2 h-px w-24 rounded-2xl border-3 border-t"
+      />
+    </div>
+    <section class="flex flex-row justify-between">
+      <!-- LEFT -->
+      <div class="z-10 flex-1 p-6 md:p-6 lg:p-40">
+        <h1
+          class="font-comfortaa py-2 text-3xl font-bold text-shadow-sm md:text-4xl md:text-black md:text-shadow-none"
+        >
+          Giới thiệu bản thân
+        </h1>
+        <p
+          class="font-comfortaa md:text-text-medium py-2 text-justify text-shadow-sm md:pr-150 md:text-shadow-none"
+        >
+          Tôi là người hướng nội, tập trung tốt nhất về đêm; mê video game, phim
+          và khám phá ẩm thực. Ứng tuyển Thực tập Web Developer, tôi có nền tảng
+          HTML/CSS/Tailwind, JavaScript/TypeScript, React/Next.js; backend
+          Node.js/Express hoặc PHP/Laravel; MySQL/PostgreSQL, REST và Git. Tôi
+          đã làm portfolio, movie app và vài CRUD nhỏ, ưu tiên clean code & UI
+          gọn. Học nhanh, chủ động nhận feedback, sẵn sàng hỗ trợ team từ dựng
+          component đến tích hợp API trong quy trình Agile/CI/CD.
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <button class="py-2">
+            <a
+              class="bg-white md:bg-p font-comfortaa  mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              href="#"
+              >Resume</a
+            >
+          </button>
+        </div>
+      </div>
+      <!-- RIGHT -->
+      <div
+        class="invisible absolute right-0 z-0 h-auto w-120 flex-1 py-6 md:visible md:w-150"
+      >
+        <img src="assets/portrait2.jpg" alt="" />
+      </div>
+      <div
+        class="visible absolute right-0 z-0 h-auto w-120 flex-1 py-6 md:invisible md:w-150"
+      >
+        <img src="assets/bg-2.png" alt="" />
+      </div>
     </section>
+
     <!-- CONTACT -->
-    <section>
+    <section></section>
 
-    </section>
     <!-- FOOTER -->
-    <footer>
-
+    <footer class="py-8">
+      <div class="mb-4 flex justify-center gap-8">
+        <i data-lucide="linkedin" class="h-auto w-7"></i>
+        <i data-lucide="mail" class="h-auto w-7"></i>
+        <i data-lucide="phone" class="h-auto w-7"></i>
+      </div>
+      <div class="font-comfortaa text-center text-gray-500">
+        Syntax Ngo 2025
+      </div>
     </footer>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
