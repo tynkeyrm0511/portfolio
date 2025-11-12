@@ -65,7 +65,7 @@
           UI mạch lạc (React/Next.js, Vite, React Query, Tailwind). Đang tìm
           internship để va chạm quy trình thật và ship sản phẩm có người dùng.
         </p>
-        <div class="flex justify-center pt-3 md:justify-start gap-6">
+        <div class="flex justify-center gap-6 pt-3 md:justify-start">
           <button
             class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
             href=""
@@ -87,7 +87,6 @@
           src="assets/portrait_1.png"
           alt=""
         />
-
       </div>
     </section>
 
@@ -106,44 +105,40 @@
       </div>
       <!-- Project 1 -->
       <div
-        class="mx-auto flex max-w-5xl flex-col justify-stretch gap-0 p-6 md:flex-row"
+        class="mx-auto mb-12 flex h-100 max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:flex-row"
       >
         <!-- Left -->
-        <div
-          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-4xl"
-        >
-          <h1
-            class="font-comfortaa px-2 pt-6 pb-3 text-left text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
-          >
-            HomeEase
-          </h1>
-          <p
-            class="font-comfortaa text-text-medium invisible px-10 pb-6 text-justify md:visible"
-          >
-            <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
-            web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
-            trì và thông báo. Dự án sử dụng
-            <span class="font-bold text-[#8BC500]">Node.js</span>,
-            <span class="font-bold text-[#F7DF1E]">Express.js</span>,
-            <span class="font-bold text-[#02364E]">Prisma ORM</span>, và
-            <span class="font-bold text-[#336791]">PostgreSQL</span> cho
-            backend; EJS và TailwindCSS cho frontend. Kiến trúc module đảm bảo
-            dễ mở rộng và bảo trì.
-          </p>
-          <button class="px-10 pb-6">
+        <div class="flex flex-1 flex-col justify-between p-8">
+          <div class="p-4">
+            <h1 class="font-comfortaa mb-4 text-left text-xl text-shadow-lg">
+              HomeEase
+            </h1>
+            <p
+              class="font-comfortaa text-text-medium mb-6 hidden text-justify md:block"
+            >
+              <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
+              web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
+              trì và thông báo. Dự án sử dụng
+              <span class="font-bold text-[#8BC500]">Node.js</span>,
+              <span class="font-bold text-[#F7DF1E]">Express.js</span>,
+              <span class="font-bold text-[#02364E]">Prisma ORM</span>, và
+              <span class="font-bold text-[#336791]">PostgreSQL</span> cho
+              backend; EJS và TailwindCSS cho frontend. Kiến trúc module đảm bảo
+              dễ mở rộng và bảo trì.
+            </p>
+          </div>
+          <button>
             <a
-              class="md:bg-p font-comfortaa bg-p invisible mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              class="md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible md:inline-block"
               href="#"
               >View project</a
             >
           </button>
         </div>
         <!-- Right -->
-        <div
-          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-4xl"
-        >
+        <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
-            class="h-full w-full object-cover object-top-left shadow-lg"
+            class="h-100 w-full rounded-r-xl object-cover object-top"
             src="assets/homeease.png"
             alt=""
           />
@@ -151,85 +146,77 @@
       </div>
       <!-- Project 2 -->
       <div
-        class="mx-auto flex max-w-5xl flex-col justify-stretch gap-0 p-6 md:flex-row-reverse"
+        class="mx-auto mb-12 flex h-100 max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:flex-row-reverse"
       >
         <!-- Left -->
-        <div
-          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-4xl"
-        >
-          <h1
-            class="font-comfortaa px-2 pt-6 pb-3 text-left text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
-          >
-            Movie App
-          </h1>
-          <p
-            class="font-comfortaa text-text-medium invisible px-10 pb-6 text-justify md:visible"
-          >
-            Movie App là ứng dụng web 1 trang (SPA) giúp bạn duyệt và xem thông
-            tin cơ bản của các bộ phim (tựa, poster, mô tả ngắn…). Ứng dụng được
-            build nhanh gọn với React + Vite và triển khai trên GitHub Pages để
-            truy cập trực tiếp qua liên kết
-          </p>
-          <button class="pr-20 pb-6 pl-10">
+        <div class="flex flex-1 flex-col justify-between p-8">
+          <div class="p-3">
+            <h1 class="font-comfortaa mb-4 text-left text-xl text-shadow-lg">
+              Kage Chat
+            </h1>
+            <p
+              class="font-comfortaa text-text-medium mb-6 hidden text-justify md:block"
+            >
+              Movie App là ứng dụng web 1 trang (SPA) giúp bạn duyệt và xem
+              thông tin cơ bản của các bộ phim (tựa, poster, mô tả ngắn…). Ứng
+              dụng được build nhanh gọn với React + Vite và triển khai trên
+              GitHub Pages để truy cập trực tiếp qua liên kết
+            </p>
+          </div>
+          <button>
             <a
-              class="md:bg-p font-comfortaa bg-p invisible mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              class="md:bg-p font-comfortaa bg-p mr-2 hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible md:inline-block"
               href="#"
               >View project</a
             >
           </button>
         </div>
         <!-- Right -->
-        <div
-          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-4xl"
-        >
+        <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
-            class="h-full w-full object-cover object-top-left shadow-lg"
-            src="assets/movieapp.png"
+            class="h-100 w-full rounded-l-2xl object-cover object-top"
+            src="assets/Kagechat.png"
             alt=""
           />
         </div>
       </div>
       <!-- Project 3  -->
       <div
-        class="mx-auto flex max-w-5xl flex-col justify-stretch gap-0 p-6 md:flex-row"
+        class="mx-auto mb-12 flex h-100 max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:flex-row"
       >
         <!-- Left -->
-        <div
-          class="h-17 w-full flex-row justify-center rounded-t-lg bg-white object-cover drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-l-4xl"
-        >
-          <h1
-            class="font-comfortaa px-2 pt-6 pb-3 text-left text-xl text-shadow-lg md:px-6 md:px-10 md:pt-10 md:pt-15 md:pb-8 md:text-3xl"
-          >
-            Kage Chat
-          </h1>
-          <p
-            class="font-comfortaa text-text-medium invisible px-10 pb-6 text-justify md:visible"
-          >
-            <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
-            web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
-            trì và thông báo. Dự án sử dụng
-            <span class="font-bold text-[#8BC500]">Node.js</span>,
-            <span class="font-bold text-[#F7DF1E]">Express.js</span>,
-            <span class="font-bold text-[#02364E]">Prisma ORM</span>, và
-            <span class="font-bold text-[#336791]">PostgreSQL</span> cho
-            backend; EJS và TailwindCSS cho frontend. Kiến trúc module đảm bảo
-            dễ mở rộng và bảo trì.
-          </p>
-          <button class="px-10 pb-6">
+        <div class="flex flex-1 flex-col justify-between p-8">
+          <div class="p-3">
+            <h1 class="font-comfortaa mb-4 text-left text-xl text-shadow-lg">
+              Movie App
+            </h1>
+            <p
+              class="font-comfortaa text-text-medium mb-6 hidden text-justify md:block"
+            >
+              <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
+              web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
+              trì và thông báo. Dự án sử dụng
+              <span class="font-bold text-[#8BC500]">Node.js</span>,
+              <span class="font-bold text-[#F7DF1E]">Express.js</span>,
+              <span class="font-bold text-[#02364E]">Prisma ORM</span>, và
+              <span class="font-bold text-[#336791]">PostgreSQL</span> cho
+              backend; EJS và TailwindCSS cho frontend. Kiến trúc module đảm bảo
+              dễ mở rộng và bảo trì.
+            </p>
+          </div>
+          <button>
             <a
-              class="md:bg-p font-comfortaa bg-p invisible mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              class="md:bg-p font-comfortaa bg-p mr-2 hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible md:inline-block"
               href="#"
               >View project</a
             >
           </button>
         </div>
         <!-- Right -->
-        <div
-          class="h-30 w-full overflow-hidden rounded-b-lg drop-shadow-lg/20 md:h-100 md:w-1/2 md:rounded-none md:rounded-r-4xl"
-        >
+        <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
-            class="h-full w-full object-cover object-top-left shadow-lg"
-            src="assets/Kagechat.png"
+            class="h-100 w-full rounded-r-2xl object-cover object-top"
+            src="assets/movieapp.png"
             alt=""
           />
         </div>
@@ -267,7 +254,7 @@
         <div class="flex justify-center md:justify-start">
           <button class="py-2">
             <a
-              class="bg-white md:bg-p font-comfortaa  mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
               href="#"
               >Resume</a
             >
@@ -288,14 +275,61 @@
     </section>
 
     <!-- CONTACT -->
-    <section></section>
+    <section class="mx-auto max-w-2xl py-12">
+      <!-- Title -->
+      <h1 class="font-comfortaa pb-2 text-center text-3xl text-shadow-lg">
+        Contact
+      </h1>
+      <hr
+        class="border-p mx-auto my-2 h-px w-24 rounded-2xl border-3 border-t"
+      />
+      <!-- Form -->
+      <form class="flex flex-col gap-3">
+        <label class="font-comfortaa">Name</label>
+        <input
+          type="text"
+          class="focus:ring-p rounded-lg border border-gray-300 bg-white px-4 py-2 focus:ring-1 focus:outline-none"
+        />
+
+        <label class="font-comfortaa">Email</label>
+        <input
+          type="text"
+          class="focus:ring-p rounded-lg border border-gray-300 bg-white px-4 py-2 focus:ring-1 focus:outline-none"
+        />
+
+        <label class="font-comfortaa">Message</label>
+        <textarea
+          rows="5"
+          class="focus:ring-p resize-none rounded-lg border border-gray-300 bg-white px-4 py-2 focus:ring-1 focus:outline-none"
+        ></textarea>
+        <!-- Button -->
+        <div class="flex justify-center md:justify-end">
+          <button class="py-2">
+            <a
+              class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              href="#"
+              >Resume</a
+            >
+          </button>
+        </div>
+      </form>
+    </section>
 
     <!-- FOOTER -->
     <footer class="py-8">
       <div class="mb-4 flex justify-center gap-8">
-        <i data-lucide="linkedin" class="h-auto w-7"></i>
-        <i data-lucide="mail" class="h-auto w-7"></i>
-        <i data-lucide="phone" class="h-auto w-7"></i>
+        <i
+          data-lucide="linkedin"
+          class="hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
+        ></i>
+        <i
+          data-lucide="mail"
+          class="hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
+        ></i>
+        <i
+          data-lucide="phone"
+          class="hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
+        ></i>
       </div>
       <div class="font-comfortaa text-center text-gray-500">
         Syntax Ngo 2025
