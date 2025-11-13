@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import "tailwindcss-animated";
 
 @theme{
     /* Screen */
@@ -38,3 +39,18 @@
     }
 }
 
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1; }
+}
+.animate-fadeIn{
+    animation: fadeIn 1s ease;
+}
+
+@keyframes slideUp {
+    from {transform: translateY(40px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+.animate-slideUp{
+    animation: slideUp 0.8s cubic-bezier(.4,0,.2,1);
+}

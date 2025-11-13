@@ -11,6 +11,7 @@
     <!-- SCRIPT -->
     <script defer type="module" src="js/main.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100">
     <!-- HEADER -->
@@ -45,7 +46,10 @@
 
     <section class="z-10 flex flex-col items-center md:flex-row lg:flex-row">
       <!-- LEFT -->
-      <div class="z-10 mx-auto flex-1 px-4 pt-15 md:p-15 lg:ml-10 lg:p-15">
+      <div
+        data-aos="fade-right"
+        class="z-10 mx-auto flex-1 px-4 pt-30 md:p-15 lg:ml-10 lg:p-15"
+      >
         <h2
           class="md:text-p font-comfortaa py-3 text-xl font-bold text-white uppercase text-shadow-lg md:text-shadow-none"
         >
@@ -67,13 +71,15 @@
         </p>
         <div class="flex justify-center gap-6 pt-3 md:justify-start">
           <button
-            class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+            data-aos="flip-up"
+            class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible"
             href=""
           >
             Projects
           </button>
           <button
-            class="font-comfortaa inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:bg-white"
+            data-aos="flip-up"
+            class="hover:animate-jump hover:animate-once hover:animate-ease-in font-comfortaa inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:bg-white"
             href=""
           >
             Linkedin
@@ -83,6 +89,7 @@
       <!-- RIGHT -->
       <div class="flex flex-1 justify-end">
         <img
+          data-aos="fade-left"
           class="absolute top-0 right-0 z-0 h-auto w-160"
           src="assets/portrait_1.png"
           alt=""
@@ -93,7 +100,7 @@
     <!-- PROJECTS LIST -->
     <section class="px-6 pt-30 pb-6">
       <!-- Title -->
-      <div class="pb-6">
+      <div data-aos="zoom-in" class="pb-6">
         <h1
           class="font-comfortaa text-bold text-center text-3xl text-shadow-lg"
         >
@@ -105,12 +112,17 @@
       </div>
       <!-- Project 1 -->
       <div
-        class="mx-auto mb-12 flex h-100 max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:flex-row"
+        data-aos="fade-up-right"
+        class="mx-auto mb-12 flex max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:h-100 md:flex-row"
       >
         <!-- Left -->
-        <div class="flex flex-1 flex-col justify-between p-8">
-          <div class="p-4">
-            <h1 class="font-comfortaa mb-4 text-left text-xl text-shadow-lg">
+        <div
+          class="bg-p flex flex-1 flex-col justify-between p-0 md:bg-white md:p-8"
+        >
+          <div>
+            <h1
+              class="font-comfortaa py-4 text-center text-xl text-shadow-lg/20 md:text-left"
+            >
               HomeEase
             </h1>
             <p
@@ -129,7 +141,7 @@
           </div>
           <button>
             <a
-              class="md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible md:inline-block"
+              class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible md:inline-block"
               href="#"
               >View project</a
             >
@@ -138,7 +150,7 @@
         <!-- Right -->
         <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
-            class="h-100 w-full rounded-r-xl object-cover object-top"
+            class="h-100 w-full rounded-b-xl object-cover object-top md:rounded-r-xl"
             src="assets/homeease.png"
             alt=""
           />
@@ -146,12 +158,17 @@
       </div>
       <!-- Project 2 -->
       <div
+        data-aos="fade-up-left"
         class="mx-auto mb-12 flex h-100 max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:flex-row-reverse"
       >
         <!-- Left -->
-        <div class="flex flex-1 flex-col justify-between p-8">
-          <div class="p-3">
-            <h1 class="font-comfortaa mb-4 text-left text-xl text-shadow-lg">
+        <div
+          class="bg-p flex flex-1 flex-col justify-between p-0 md:bg-white md:p-8"
+        >
+          <div>
+            <h1
+              class="font-comfortaa py-4 text-center text-xl text-shadow-lg/20 md:text-left"
+            >
               Kage Chat
             </h1>
             <p
@@ -165,7 +182,7 @@
           </div>
           <button>
             <a
-              class="md:bg-p font-comfortaa bg-p mr-2 hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible md:inline-block"
+              class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible md:inline-block"
               href="#"
               >View project</a
             >
@@ -174,7 +191,7 @@
         <!-- Right -->
         <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
-            class="h-100 w-full rounded-l-2xl object-cover object-top"
+            class="h-100 w-full rounded-l-2xl object-cover object-top-left"
             src="assets/Kagechat.png"
             alt=""
           />
@@ -182,12 +199,17 @@
       </div>
       <!-- Project 3  -->
       <div
+        data-aos="fade-down-right"
         class="mx-auto mb-12 flex h-100 max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:flex-row"
       >
         <!-- Left -->
-        <div class="flex flex-1 flex-col justify-between p-8">
-          <div class="p-3">
-            <h1 class="font-comfortaa mb-4 text-left text-xl text-shadow-lg">
+        <div
+          class="bg-p flex flex-1 flex-col justify-between p-0 md:bg-white md:p-8"
+        >
+          <div>
+            <h1
+              class="font-comfortaa py-4 text-center text-xl text-shadow-lg/20 md:text-left"
+            >
               Movie App
             </h1>
             <p
@@ -206,7 +228,7 @@
           </div>
           <button>
             <a
-              class="md:bg-p font-comfortaa bg-p mr-2 hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible md:inline-block"
+              class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible md:inline-block"
               href="#"
               >View project</a
             >
@@ -215,7 +237,7 @@
         <!-- Right -->
         <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
-            class="h-100 w-full rounded-r-2xl object-cover object-top"
+            class="h-100 w-full rounded-b-2xl object-cover object-top md:rounded-r-2xl"
             src="assets/movieapp.png"
             alt=""
           />
@@ -224,7 +246,7 @@
     </section>
     <!-- ABOUT ME -->
     <!-- Title -->
-    <div class="">
+    <div data-aos="zoom-in">
       <h1 class="font-comfortaa text-bold text-center text-3xl text-shadow-lg">
         About
       </h1>
@@ -254,7 +276,7 @@
         <div class="flex justify-center md:justify-start">
           <button class="py-2">
             <a
-              class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible"
               href="#"
               >Resume</a
             >
@@ -263,19 +285,19 @@
       </div>
       <!-- RIGHT -->
       <div
-        class="invisible absolute right-0 z-0 h-auto w-120 flex-1 py-6 md:visible md:w-150"
+        class="animate-wiggle animate-infinite animate-duration-[4000ms] animate-ease-in invisible absolute right-0 z-0 h-auto w-120 flex-1 py-6 md:visible md:w-150"
       >
         <img src="assets/portrait2.jpg" alt="" />
       </div>
       <div
-        class="visible absolute right-0 z-0 h-auto w-120 flex-1 py-6 md:invisible md:w-150"
+        class="animate-jump animate-infinite animate-duration-[8000ms] animate-ease-in visible absolute right-0 z-0 h-auto w-120 flex-1 py-6 md:invisible md:w-150"
       >
         <img src="assets/bg-2.png" alt="" />
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="mx-auto max-w-2xl py-12">
+    <section data-aos="zoom-in" class="mx-auto max-w-xs py-2 md:max-w-2xl">
       <!-- Title -->
       <h1 class="font-comfortaa pb-2 text-center text-3xl text-shadow-lg">
         Contact
@@ -299,16 +321,16 @@
 
         <label class="font-comfortaa">Message</label>
         <textarea
-          rows="5"
+          rows="6"
           class="focus:ring-p resize-none rounded-lg border border-gray-300 bg-white px-4 py-2 focus:ring-1 focus:outline-none"
         ></textarea>
         <!-- Button -->
         <div class="flex justify-center md:justify-end">
           <button class="py-2">
             <a
-              class="md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-10 py-2 font-bold shadow-lg/25 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer md:visible"
+              class="hover:animate-jump hover:animate-once hover:animate-ease-in font-comfortaa bg-p md:bg-p mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible"
               href="#"
-              >Resume</a
+              >Send</a
             >
           </button>
         </div>
@@ -316,27 +338,44 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-8">
+    <footer class="relative z-20 py-8">
       <div class="mb-4 flex justify-center gap-8">
-        <i
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener"
           data-lucide="linkedin"
-          class="hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
-        ></i>
-        <i
+          class="hover:animate-wiggle-more hover:animate-infinite hover:animate-ease-in hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
+        ></a>
+        <a
+          href="mailto:your@email.com"
           data-lucide="mail"
-          class="hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
-        ></i>
-        <i
+          class="hover:animate-wiggle-more hover:animate-infinite hover:animate-ease-in hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
+        ></a>
+        <a
+          href="tel:0123456789"
           data-lucide="phone"
-          class="hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
-        ></i>
+          class="hover:animate-wiggle-more hover:animate-infinite hover:animate-ease-in hover:bg-p m-1 h-auto w-9 p-1 hover:cursor-pointer hover:rounded-lg hover:border hover:border-none"
+        ></a>
       </div>
-      <div class="font-comfortaa text-center text-gray-500">
+      <div class="font-comfortaa z-10 pb-10 text-center text-gray-500 md:pb-40">
         Syntax Ngo 2025
       </div>
+      <img
+        src="assets/footer.png"
+        alt="footer"
+        class="pointer-events-none absolute bottom-0 left-0 z-0 w-full"
+      />
     </footer>
+
+    <!-- LUCIDE ICON -->
     <script>
       lucide.createIcons();
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
