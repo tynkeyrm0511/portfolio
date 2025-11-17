@@ -26,19 +26,27 @@
           >
         </div>
         <!-- MENU -->
-        <ul
-          class="font-comfortaa flex items-center gap-2 px-2 text-shadow-lg/20 md:gap-6 md:pr-20 lg:gap-10"
-        >
+        <ul class="font-comfortaa flex items-center gap-2 px-2 text-shadow-lg/20 md:gap-6 md:pr-20 lg:gap-10">
           <li>
-            <a class="hover:font-bold hover:text-shadow-lg" href="#">About</a>
+            <p class="group relative w-max">
+              <a href="#about" class="px-2 py-1 font-medium transition-colors duration-200">About</a>
+              <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-black rounded-r-2xl transition-all duration-300 group-hover:w-3/6"></span>
+              <span class="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-black rounded-l-2xl transition-all duration-300 group-hover:w-3/6"></span>
+            </p>
           </li>
           <li>
-            <a class="hover:font-bold hover:text-shadow-lg" href="#"
-              >Projects</a
-            >
+            <p class="group relative w-max">
+              <a href="#projects" class="px-2 py-1 font-medium transition-colors duration-200">Projects</a>
+              <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-black rounded-r-2xl transition-all duration-300 group-hover:w-3/6"></span>
+              <span class="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-black rounded-l-2xl transition-all duration-300 group-hover:w-3/6"></span>
+            </p>
           </li>
           <li>
-            <a class="hover:font-bold hover:text-shadow-lg" href="#">Contact</a>
+            <p class="group relative w-max">
+              <a href="#contact" class="px-2 py-1 font-medium transition-colors duration-200">Contact</a>
+              <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-black rounded-r-2xl transition-all duration-300 group-hover:w-3/6"></span>
+              <span class="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-black rounded-l-2xl duration-300 group-hover:w-3/6"></span>
+            </p>
           </li>
         </ul>
       </nav>
@@ -73,14 +81,16 @@
           <button
             data-aos="flip-up"
             class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible"
-            href=""
+            onclick="location.href='#projects'"
+            type="button"
           >
             Projects
           </button>
           <button
             data-aos="flip-up"
             class="hover:animate-jump hover:animate-once hover:animate-ease-in font-comfortaa inline-block rounded-lg bg-white px-6 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:bg-white"
-            href=""
+            type="button"
+            onclick="window.open('https://www.linkedin.com/in/nguyen-ngo-hoang-b01440361/')"
           >
             Linkedin
           </button>
@@ -98,7 +108,7 @@
     </section>
 
     <!-- PROJECTS LIST -->
-    <section class="px-6 pt-30 pb-6">
+    <section id="projects" class="px-6 pt-30 pb-6">
       <!-- Title -->
       <div data-aos="zoom-in" class="pb-6">
         <h1
@@ -123,26 +133,22 @@
             <h1
               class="font-comfortaa py-4 text-center text-xl text-shadow-lg/20 md:text-left"
             >
-              HomeEase
+              Kage Chat
             </h1>
             <p
               class="font-comfortaa text-text-medium mb-6 hidden text-justify md:block"
             >
-              <span class="font-bold text-[#7D3AE8]">HomeEase</span> là ứng dụng
-              web quản lý chung cư, hỗ trợ quản lý cư dân, hóa đơn, yêu cầu bảo
-              trì và thông báo. Dự án sử dụng
-              <span class="font-bold text-[#8BC500]">Node.js</span>,
-              <span class="font-bold text-[#F7DF1E]">Express.js</span>,
-              <span class="font-bold text-[#02364E]">Prisma ORM</span>, và
-              <span class="font-bold text-[#336791]">PostgreSQL</span> cho
-              backend; EJS và TailwindCSS cho frontend. Kiến trúc module đảm bảo
-              dễ mở rộng và bảo trì.
+              Kage Chat là ứng dụng nhắn tin real-time cho phép đăng nhập, kết
+              bạn, chat riêng và chat nhóm. Hệ thống dùng Socket.IO để trao đổi
+              tin nhắn tức thời, JWT để xác thực, React + TailwindCSS cho giao
+              diện, và MongoDB để lưu trữ dữ liệu.
             </p>
           </div>
           <button>
             <a
               class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible md:inline-block"
-              href="#"
+              href="https://github.com/tynkeyrm0511/homeease"
+              target="_blank"
               >View project</a
             >
           </button>
@@ -151,7 +157,7 @@
         <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
             class="h-100 w-full rounded-b-xl object-cover object-top md:rounded-r-xl"
-            src="assets/homeease.png"
+            src="assets/Kagechat.png"
             alt=""
           />
         </div>
@@ -169,7 +175,7 @@
             <h1
               class="font-comfortaa py-4 text-center text-xl text-shadow-lg/20 md:text-left"
             >
-              Kage Chat
+              Dead in Midnight
             </h1>
             <p
               class="font-comfortaa text-text-medium mb-6 hidden text-justify md:block"
@@ -183,7 +189,8 @@
           <button>
             <a
               class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible md:inline-block"
-              href="#"
+              href="https://github.com/tynkeyrm0511/homeease"
+              target="_blank"
               >View project</a
             >
           </button>
@@ -210,7 +217,7 @@
             <h1
               class="font-comfortaa py-4 text-center text-xl text-shadow-lg/20 md:text-left"
             >
-              Movie App
+              Home Ease
             </h1>
             <p
               class="font-comfortaa text-text-medium mb-6 hidden text-justify md:block"
@@ -229,7 +236,8 @@
           <button>
             <a
               class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa bg-p hidden rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible md:inline-block"
-              href="#"
+              href="https://github.com/tynkeyrm0511/homeease"
+              target="_blank"
               >View project</a
             >
           </button>
@@ -238,7 +246,7 @@
         <div class="flex flex-1 items-center justify-center drop-shadow-2xl">
           <img
             class="h-100 w-full rounded-b-2xl object-cover object-top md:rounded-r-2xl"
-            src="assets/movieapp.png"
+            src="assets/homeease.png"
             alt=""
           />
         </div>
@@ -246,7 +254,7 @@
     </section>
     <!-- ABOUT ME -->
     <!-- Title -->
-    <div data-aos="zoom-in">
+    <div data-aos="zoom-in" id="about">
       <h1 class="font-comfortaa text-bold text-center text-3xl text-shadow-lg">
         About
       </h1>
@@ -277,7 +285,8 @@
           <button class="py-2">
             <a
               class="hover:animate-jump hover:animate-once hover:animate-ease-in md:bg-p font-comfortaa md:bg-p font-comfortaa mr-2 inline-block rounded-lg bg-white px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible"
-              href="#"
+              type="button"
+              onclick="window.open('assets/syntax_ngo_resume.pdf')"
               >Resume</a
             >
           </button>
@@ -297,7 +306,11 @@
     </section>
 
     <!-- CONTACT -->
-    <section data-aos="zoom-in" class="mx-auto max-w-xs py-2 md:max-w-2xl">
+    <section
+      id="contact"
+      data-aos="zoom-in"
+      class="mx-auto max-w-xs py-2 md:max-w-2xl"
+    >
       <!-- Title -->
       <h1 class="font-comfortaa pb-2 text-center text-3xl text-shadow-lg">
         Contact
@@ -306,32 +319,39 @@
         class="border-p mx-auto my-2 h-px w-24 rounded-2xl border-3 border-t"
       />
       <!-- Form -->
-      <form class="flex flex-col gap-3">
+      <form
+        id="contactForm"
+        class="flex flex-col gap-3"
+        action="https://formspree.io/f/xblqbgon"
+        method="POST"
+      >
         <label class="font-comfortaa">Name</label>
         <input
+          name="name"
           type="text"
           class="focus:ring-p rounded-lg border border-gray-300 bg-white px-4 py-2 focus:ring-1 focus:outline-none"
         />
 
         <label class="font-comfortaa">Email</label>
         <input
-          type="text"
+          type="email"
+          name="email"
           class="focus:ring-p rounded-lg border border-gray-300 bg-white px-4 py-2 focus:ring-1 focus:outline-none"
         />
 
         <label class="font-comfortaa">Message</label>
         <textarea
+          name="message"
           rows="6"
           class="focus:ring-p resize-none rounded-lg border border-gray-300 bg-white px-4 py-2 focus:ring-1 focus:outline-none"
         ></textarea>
         <!-- Button -->
         <div class="flex justify-center md:justify-end">
-          <button class="py-2">
-            <a
-              class="hover:animate-jump hover:animate-once hover:animate-ease-in font-comfortaa bg-p md:bg-p mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible"
-              href="#"
-              >Send</a
-            >
+          <button
+            class="hover:animate-jump hover:animate-once hover:animate-ease-in font-comfortaa bg-p md:bg-p mr-2 inline-block rounded-lg px-10 py-2 font-bold shadow-lg/25 hover:cursor-pointer md:visible"
+            type="submit"
+          >
+            Send
           </button>
         </div>
       </form>
@@ -368,6 +388,22 @@
       />
     </footer>
 
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="animate-wiggle animate-infinite hover:animate-wiggle-more hover:animate-infinite bg-p font-comfortaa fixed right-8 bottom-8 z-50 hidden rounded-full p-3 font-bold text-black shadow-lg/20 transition hover:cursor-pointer"
+      aria-label="Quay lại đầu trang"
+    >
+      Back to top
+    </button>
+    <script>
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+      });
+      backToTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
+
     <!-- LUCIDE ICON -->
     <script>
       lucide.createIcons();
@@ -377,5 +413,7 @@
     <script>
       AOS.init();
     </script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

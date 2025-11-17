@@ -54,3 +54,7 @@
 .animate-slideUp{
     animation: slideUp 0.8s cubic-bezier(.4,0,.2,1);
 }
+
+html {
+    scroll-behavior: smooth;
+}
