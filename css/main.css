@@ -58,3 +58,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Cho phép click vào icon Lucide */
+[data-lucide] svg {
+  pointer-events: none;
+}
